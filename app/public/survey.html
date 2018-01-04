@@ -145,7 +145,7 @@
 <script>
 
 
-$('#submitButton').on('click', function(event) {
+$("#submitButton").on("click", function(event) {
 
       event.preventDefault();
 
@@ -155,26 +155,26 @@ $('#submitButton').on('click', function(event) {
 
       var userInput = {
 
-        name: $('#name').val().trim(),
+        name: $("#name").val().trim(),
 
-        photo: $('#photo').val().trim(),
+        photo: $("#photo").val().trim(),
 
         scores:[
-          $('#q1').val().trim(),
-          $('#q2').val().trim(),
-          $('#q3').val().trim(),
-          $('#q4').val().trim(),
-          $('#q5').val().trim(),
-          $('#q6').val().trim(),
-          $('#q7').val().trim(),
-          $('#q8').val().trim(),
-          $('#q9').val().trim(),
-          $('#q10').val().trim()
+          $("#q1").val().trim(),
+          $("#q2").val().trim(),
+          $("#q3").val().trim(),
+          $("#q4").val().trim(),
+          $("#q5").val().trim(),
+          $("#q6").val().trim(),
+          $("#q7").val().trim(),
+          $("#q8").val().trim(),
+          $("#q9").val().trim(),
+          $("#q10").val().trim()
         ]
 
       };
 
-      console.log('userInput = ' + JSON.stringify(userInput));
+      console.log("userInput = " + JSON.stringify(userInput));
 
 
       $.post('/api/friends', userInput)
