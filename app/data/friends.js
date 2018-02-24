@@ -1,4 +1,4 @@
-var friendsArray = [
+var friends = [
 	{
 		name:  "SpongeBob Square Pants",
 		photo: "http://s1.thingpic.com/images/FZ/BNT6TL6c2YdMp9kHeARDkxNj.png",
@@ -18,4 +18,4 @@ var friendsArray = [
 
 ];
 
-module.exports = friendsArray;
+module.exports = friends;

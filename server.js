@@ -13,7 +13,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("app/public/assets/css"));
 
 require('./app/routing/htmlRoutes.js')(app);
-//require('./app/routing/apiRoutes.js')(app, bodyParser, path);
+require('./app/routing/apiRoutes.js')(app, bodyParser, path);
 
 
 var PORT = process.env.PORT || 3000;
