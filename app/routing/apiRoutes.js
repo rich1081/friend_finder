@@ -4,10 +4,8 @@ module.exports = function(app) {
 
 // Total list of friend entries
 
-	app.get('/api/friends', function(req, res) {
-
-		res.json(friends);
-
+ app.get('/api/friends', function(req, res) {
+	res.json(friends);
 	});
 
 
@@ -15,8 +13,6 @@ module.exports = function(app) {
 	// Add new friend entry
 
 	app.post('/api/friends', function(req, res) {
-
-		// Capture the user input object
 
 		var userInput = req.body;
 
@@ -26,7 +22,7 @@ module.exports = function(app) {
 
 		friends.push(userInput);
 
-
+	});
 	
 }
 
