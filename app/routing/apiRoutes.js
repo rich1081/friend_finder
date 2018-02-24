@@ -52,9 +52,8 @@ module.exports = function(app) {
 			  bestMatch.friendDifference = totalDifference;
 			}
 		  }
-	  
-		  // Finally save the user's data to the database (this has to happen AFTER the check. otherwise,
-		  // the database will always return that the user is the user's best friend).
+		
+			
 		  friends.push(userData);
 	  
 		  // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
